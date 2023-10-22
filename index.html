@@ -174,7 +174,47 @@
             <section id="generator" class="wrapper style1-alt">
                 <div class="inner">
                     <h2>Defeasible Knowledge Base Generator</h2>
-                    <p>lorem ipsum</p>
+                    <h3>Introduction</h3>
+                    <p>A defeasible knowledge generator was developed to facilitate the testing of the new defeasible entailment relations. It is capable of generating knowledge bases with varying complexities and structures.</p>
+
+                    <h3>Aims</h3>
+                    The aims of this part of the project were to:
+                    <ul>
+                        <li>Create a non-deterministic algorithm, capable of generating defeasible knowledge bases, organized in a manner aligned with Base Rank's ranking of a knowledge base.</li>
+                        <li>Develop an optimized variant of the knowledge base generator.</li>
+                        <li>Compare the performance of the standard and optimized generators and evaluate the impact of defeasible implication complexity on the computation time of generation.</li>
+                    </ul>
+
+                    <h3>Algorithms</h3>
+                    Two algorithms, KBGenerator and KBGeneratorThreaded, were developed to facilitate knowledge base generation. Their features include:
+                    <ul>
+                        <li>Number defeasible implications (DIs)​</li>
+                        <li>Number of ranks​</li>
+                        <li>Distribution of DIs​</li>
+                        <li>Simple/Mixed DI generation​</li>
+                        <li>Adjustable Antecedent and Consequent complexity</li>
+                        <li>Adjustable complex-DI connective types</li>
+                        <li>Adjustable connective symbols</li>
+                        <li>Adjustable atom character-set</li>
+                    </ul>
+
+                    <h3>Results</h3>
+                    The project resulted in the following:
+                    <ul>
+                        <li>The optimized generator had significant speedup over the standard generator.</li>
+                        <li>However, the optimized generator had a higher percentage increase in execution time when the number of defeasible implications (DIs) increased compared to the standard generator. This trend was observed for both simple and complex defeasible implications.</li>
+                        <li>Knowledge bases with complex defeasible implications took longer to generate compared to those with only simple defeasible implications.</li>
+                        <li>The standard generator had a larger percentage increase in execution time between generating simple and complex DIs than the optimized generator.</li>
+                    </ul>
+
+                    <h3>Future Work</h3>
+                    We can focus on these areas for future work:
+                    <ul>
+                        <li>The tool can be used to perform more in-depth analysis on defeasible entailment relations.</li>
+                        <li>Further improvements can be made to the pseudo-random recycling of atoms in DIs, along with more sophisticated thread management for the optimized generator. These modifications have the potential to yield significant performance improvements in generating complex defeasible implications.</li>
+                    </ul>
+                    <h3>GitHub</h3>
+                    Click to view code: <a class="btn btn-primary" href="https://github.com/AleccLang/dkbg-P" role="button">GitHub Repository</a>
                 </div>
             </section>
             <!-- User-Defined Rankings -->
@@ -240,8 +280,8 @@
                         <div class="resource-wrapper">
                             <h3>Alec Lang</h3>
                             <div>
-                                <a target="_blank" href="resources/.pdf">Literature Review</a>
-                                <a target="_blank" href="resources/.pdf">Paper</a>
+                                <a target="_blank" href="resources/Literature_Review_LNGALE007.pdf">Literature Review</a>
+                                <a target="_blank" href="resources/LNGALE007FinalPaper.pdf">Paper</a>
                             </div>
                         </div>
                         <div style="width:1px;background:#F6E6B7"></div>
@@ -281,7 +321,7 @@
                             <h3>Students</h3>
                             <div class="user">
                                 <p><i class="icon solid fa-user"></i> Alec Lang</p>
-                                <p><i class="icon solid fa-envelope"></i> chocon(deez)@gmail.com</p>
+                                <p><i class="icon solid fa-envelope"></i> LNGALE007@myuct.ac.za</p>
                             </div>
                             <div class="user">
                                 <p><i class="icon solid fa-user"></i> David Pullinger</p>
