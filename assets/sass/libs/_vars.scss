@@ -17,15 +17,15 @@
 		border-width:		1px,
 		element-height:		2.75em,
 		element-margin:		2em,
-		sidebar-width:		18em,
+		sidebar-width:		12em,
 		sidebar-height:		3.5em,	// when <=large is active
 		inner-width:		75em
 	);
 
 // Font.
 	$font: (
-		family:				(Arial, Helvetica, sans-serif),
-		family-fixed:		('Courier New', monospace),
+		family:				('Montserrat', Helvetica, sans-serif),
+		family-fixed:		('Times New Roman', monospace),
 		weight:				normal,
 		weight-bold:		bold,
 		kerning-alt:		0.25em
@@ -33,17 +33,17 @@
 
 // Palette.
 	$palette: (
-		bg:					#312450,
+		bg:					#231F20,
 		bg-alt:				darken(#312450, 5),
-		fg:					rgba(255,255,255,0.55),
-		fg-bold:			#ffffff,
-		fg-light:			rgba(255,255,255,0.35),
-		border:				rgba(255,255,255,0.15),
+		fg:					#F6E6B7,
+		fg-bold:			#F6E6B7,
+		fg-light:			#F6E6B7,
+		border:				#F6E6B7,
 		border-bg:			rgba(255,255,255,0.05),
-		accent1:			#5e42a6,
-		accent1-alt:		darken(#5e42a6, 10),
-		accent2:			#5052b5,
-		accent2-alt:		darken(#5052b5, 10),
-		accent3:			#b74e91,
-		accent3-alt:		darken(#b74e91, 10)
+		accent1:			#BB4430,
+		accent1-alt:		darken(#BB4430, 10),
+		accent3:			#2E5E61,
+		accent3-alt:		darken(#2E5E61, 10),
+		accent2:			#66683C,
+		accent2-alt:		darken(#66683C, 10)
 	);

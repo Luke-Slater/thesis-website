@@ -1,208 +1,326 @@
 <!DOCTYPE HTML>
 <!--
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Hyperspace by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+    <head>
+        <title>EXTRC</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" href="images/entail.png"/>
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+            .resources-wrapper {
+                display: flex;
+                justify-content: space-between;
+                gap: 1rem;
+            }
+            .resource-wrapper {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .resource-wrapper > div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1rem
+            }
+            .resource-wrapper > div > a {
+                text-align: center;
+                border: solid 1px #F6E6B7;
+                border-radius: 3rem;
+                padding: 0.5rem 0.7rem;
+                transition: transform 0.2s ease-in-out;
+            }
+            .resource-wrapper > div > a:hover {
+                transform: translateY(-5px);
+            }
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Who we are</a></li>
-							<li><a href="#two">What we do</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+            .footer-section {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 5em;
+            }
+            .user {
+                display: flex;
+                gap: 2rem;
+            }
+            .students {
+                display: flex;
+                flex-direction: column;
+            }
+            .user > p {
+                margin-bottom: 1rem;
+            }
+            .user > p:first-child {
+                width: 14ch;
+            }
+            .team {
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                width: 50%;
+            } 
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+            .images {
+                display: flex;
+                flex-direction: column;
+                width: 40%;
+                gap: 0.5em;
+            }
+            .images > img {
+                max-width: 100%;
+            }
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Extending Defeasible Reasoning beyond Rational Closure</h1>
-							<p>An exploration of various tools to facilitate defeasible reasoning research.</p>
-							<ul class="actions">
-								<li><a href="#one" class="button scrolly">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+            ul.menu {
+                margin-bottom: 0;
+                margin: auto;
+                width: fit-content;
+            }
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sed ipsum dolor</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Feugiat consequat</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Ultricies aliquam</h2>
-									<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus.</p>
-									<ul class="actions">
-										<li><a href="generic.html" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-					</section>
+            #footer > .inner{
+               padding-bottom: 1.5rem;
+            }
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>What we do</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="features">
-								<section>
-									<span class="icon solid major fa-code"></span>
-									<h3>Lorem ipsum amet</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-lock"></span>
-									<h3>Aliquam sed nullam</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-cog"></span>
-									<h3>Sed erat ullam corper</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-desktop"></span>
-									<h3>Veroeros quis lorem</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon solid major fa-link"></span>
-									<h3>Urna quis bibendum</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-								<section>
-									<span class="icon major fa-gem"></span>
-									<h3>Aliquam urna dapibus</h3>
-									<p>Phasellus convallis elit id ullam corper amet et pulvinar. Duis aliquam turpis mauris, sed ultricies erat dapibus.</p>
-								</section>
-							</div>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn more</a></li>
-							</ul>
-						</div>
-					</section>
+            .contact {
+                display: flex;
+                gap: 3rem;
+                align-items: center;
+                width: 50%;
+                justify-content: center;
+            }
+            .contact-details {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 0.5rem;
+            }
+            .contact-details > p {
+                margin-bottom: 0rem;
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+        <!-- Sidebar -->
+        <section id="sidebar">
+            <div class="inner">
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Welcome</a></li>
+                        <li><a href="#overview">Overview</a></li>
+                        <li><a href="#background">Background</a></li>
+                        <li><a href="#generator">Defeasible KB Generator</a></li>
+                        <li><a href="#user">User-Defined Rankings</a></li>
+                        <li><a href="#bayes">Naïve Bayes Entailment</a></li>
+                        <li><a href="#resources">Resources</a></li>
+                        <li><a href="#footer">Team</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+        <!-- Wrapper -->
+        <div id="wrapper">
+            <!-- Intro -->
+            <section id="intro" class="wrapper style1 fullscreen fade-up">
+                <div class="inner">
+                    <h1>Extending Defeasible Reasoning beyond Rational Closure</h1>
+                    <p>An exploration of various tools to facilitate defeasible reasoning research.</p>
+                    <ul class="actions">
+                        <li><a href="#one" class="button scrolly">Learn more</a></li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Overview -->
+            <section id="overview" class="wrapper style3">
+                <div class="inner">
+                    <h2>Overview</h2>
+                    <p>Defeasible reasoning is a vital component of many intelligent systems, as it provides a way to reason about uncertain or exceptional information. Rational closure has been at the forefront of research in defeasible reasoning, serving as a basis for a class of rational defeasible entailment relations. This project aims to provide insight into previously unexplored methods of generating these rational defeasible entailment relations, via Bayesian Inference and user-defined rankings. Finally, a parameterised tool for creating large, defeasible knowledge bases will be created to facilitate testing and validation of such defeasible entailment relations. The findings of this project can provide insights into the characteristics, advantages, and limitations of these forms of entailment, and how they compare to rational closure and lexicographic closure.</p>
+                </div>
+            </section>
+            <!-- Background -->
+            <section id="background" class="wrapper style2">
+                <div class="inner">
+                    <h2>Background</h2>
+                    <h3>KRR</h3>
+                    <p>Knowledge representation and reasoning (KRR) is the field of artificial intelligence (AI) that focuses on organizing and structuring information in a way that machines can comprehend, and then using that structured knowledge to draw inferences, make decisions, and solve complex problems. It is fundamental in enabling AI systems to understand, reason about, and interact with the world, making it a central component of AI research and development.</p>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h2>Get in touch</h2>
-							<p>Phasellus convallis elit id ullamcorper pulvinar. Duis aliquam turpis mauris, eu ultricies erat malesuada quis. Aliquam dapibus, lacus eget hendrerit bibendum, urna est aliquam sem, sit amet imperdiet est velit quis lorem.</p>
-							<div class="split style1">
-								<section>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><a href="" class="button submit">Send Message</a></li>
-										</ul>
-									</form>
-								</section>
-								<section>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<span>12345 Somewhere Road #654<br />
-											Nashville, TN 00000-0000<br />
-											USA</span>
-										</li>
-										<li>
-											<h3>Email</h3>
-											<a href="#">user@untitled.tld</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(000) 000-0000</span>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-												<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-												<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-												<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+                    <h3>Classical Reasoning</h3>
+                    <p>Classical reasoning is a deterministic form of reasoning where statements must be either true or false, with no room for uncertainty. Propositional logic is a fundamental branch of classical logic that deals with the analysis of relationships between various statements, expressed as propositions. For instance, "penguin" is a proposition, as is "flies".</p>
 
-			</div>
+                    <div style="display:flex;gap:1em;">
+                        <p style="flex-basis: 100%;"><b>Syntax:</b> Propositional logic combines propositions, also known as atoms, using logical operators (¬, ∧, ∨, →, ↔) to make more complex statements, known as formulas. A knowledge base is a set of such formulas.</p>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</div>
-			</footer>
+                        <p style="flex-basis: 100%;"><b>Semantics:</b> Truth arises from interpretations, often referred to as "worlds", which assign truth values (true or false) to atoms. When a formula is true under some interpretation it is said to be "satisfied", and any such interpretation is said to be a "model" of that formula.</p>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                        <p style="flex-basis: 100%;"><b>Entailment:</b> "Entailment" describes a scenario where one or more statements necessarily follow from one or more other statements. In classical reasoning, when a statement is entailed by a knowledge base, this entailment cannot be retracted. When every model of a knowledge base is also a model of some other statement, it is said to entail that statement.</p>
+                    </div>
+                    <h3>Defeasible Reasoning</h3>
+                    <p>In contrast to classical reasoning's reliance on absolute truth, real-world scenarios often involve uncertainty and exceptions. Defeasible reasoning accommodates these uncertainties by allowing for the retraction of statements under specific conditions. It involves reasoning with incomplete or uncertain information, acknowledging multiple possible "parallel" worlds without identifying the precise one.</p>
 
-	</body>
+                    <p>One prominent framework for defeasible reasoning is the Kraus-Lehmann-Magidor (KLM) framework, which incorporates preferential reasoning to model the typicality of different situations or objects. This framework assigns preferences to possible worlds, allowing the expression of defeasible implications that hold "typically" rather than absolutely.</p>
+
+                    <h3>Rational Closure</h3>
+                    <p>Defeasible entailment allows the retraction of statements that were previously entailed, given additional information. Rational closure is a method of computing defeasible entailment that centers on the principle of “presumption of typicality,” assuming statements to be as typical as possible. Rational closure works by ranking information according to its level of typicality, this can be done by ranking either statements, or worlds.</p>
+
+                    <p>Rational closure has been shown to be the most conservative form of defeasible entailment, making it a good starting point for more complex forms. Our aim is to investigate the development of such forms of defeasible entailment, while also considering the practical implications of doing so.</p>
+                </div>
+            </section>
+            <!-- Defeasible KB Generator -->
+            <section id="generator" class="wrapper style1-alt">
+                <div class="inner">
+                    <h2>Defeasible Knowledge Base Generator</h2>
+                    <p>lorem ipsum</p>
+                </div>
+            </section>
+            <!-- User-Defined Rankings -->
+            <section id="user" class="wrapper style3-alt">
+                <div class="inner">
+                    <h2>User-Defined Rankings</h2>
+                    <h3>Introduction</h3>
+                    <p>Classical logic focuses on deriving conclusions from a predefined knowledge base. Defeasible entailment takes this a step further by accommodating uncertain information. Rational closure, a key method for defeasible entailment, organizes the knowledge base into ranks based on statement base rank. However, for a more nuanced approach, a user-defined, K-faithful ranking of statements may be necessary.</p>
+
+                    <h3>Aims</h3>
+                    This section of the project aimed to do the following:
+                    <ul>
+                        <li>Design algorithms which take an arbitrary ranking of defeasible implications and return a valid (K-faithful) ranking.</li>
+                        <li>Prove that our algorithm satisfies as many user preferences (rankings) as possible.</li>
+                        <li>Prove that our algorithm outputs a K-faithful ranking.</li>
+                    </ul>
+
+                    <h3>Algorithms</h3>
+                    We developed two algorithms: UnguidedUserRank and GuidedUserRank. They essentially did the following:
+                    <ul>
+                        <li>Find defeasible implications which can be placed on rank i</li>
+                        <li>Allow user to choose a subset of these</li>
+                        <li>Ensure their choices are valid (they can’t omit a statement which is entailed by a statement they don’t omit)</li>
+                        <li>Repeat</li>
+                    </ul>
+
+                    <h3>Results</h3>
+                    Given the designed algorithms, we had the following results:
+                    <ul>
+                        <li>The set of allowed defeasible implications is maximal. That is, the algorithm satisfies as many of the user's original preferences.</li>
+                        <li>The ranking that UnguidedUserRank and GuidedUserRank output is K-faithful.</li>
+                        <li>The ranking they output also retains minimality of worlds. That is, if a defeasible implication (with antecedent alpha) is assigned a rank of i by either algorithm, then the rank of the minimal alpha world in the corresponding ranked interpretation is also i.</li>
+                    </ul>
+
+                    <h3>Future Work</h3>
+                    There are several areas for future work, building on the foundations layed out here. The most important are:
+                    <ul>
+                        <li>This tool can be for cognitive defeasible reasoning, where users are actually assessed and their reasoning is studied.</li>
+                        <li>The algorithms can be made more efficient. Specifically, the steps for checking if the user's choices are valid can be memoized, or optimized using a completely different method.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Naive Bayes -->
+            <section id="bayes" class="wrapper style2-alt">
+                <div class="inner">
+                    <h2>Naïve Bayes Entailment</h2>
+                    <p>lorem ipsum</p>
+                </div>
+            </section>
+            <!-- Resources -->
+            <section id="resources" class="wrapper style1-alt">
+                <div class="inner">
+                    <h2>Resources</h2>
+                    <div class="resources-wrapper">
+                        <div class="resource-wrapper">
+                            <h3>Team</h3>
+                            <div>
+                                <a target="_blank" href="resources/ProjectProposal_EXTRC.pdf">Proposal</a>
+                                <a target="_blank" href="resources/ProjectPoster_EXTRC.pdf">Poster</a>
+                            </div>
+                        </div>
+                        <div style="width:1px;background:#F6E6B7"></div>
+                        <div class="resource-wrapper">
+                            <h3>Alec Lang</h3>
+                            <div>
+                                <a target="_blank" href="resources/.pdf">Literature Review</a>
+                                <a target="_blank" href="resources/.pdf">Paper</a>
+                            </div>
+                        </div>
+                        <div style="width:1px;background:#F6E6B7"></div>
+                        <div class="resource-wrapper">
+                            <h3>David Pullinger</h3>
+                            <div>
+                                <a target="_blank" href="resources/LiteratureReview_PLLDAV013.pdf">Literature Review</a>
+                                <a target="_blank" href="resources/FinalPaper_PLLDAV013.pdf">Paper</a>
+                            </div>
+                        </div>
+                        <div style="width:1px;background:#F6E6B7"></div>
+                        <div class="resource-wrapper">
+                            <h3>Luke Slater</h3>
+                            <div>
+                                <a target="_blank" href="resources/.pdf">Literature Review</a>
+                                <a target="_blank" href="resources/.pdf">Paper</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper style3-alt">
+            <div class="inner">
+                <div class="footer-section">
+                    <div class="team">
+                        <div>
+                            <h3>Supervisor</h3>
+                            <div class="user">
+                                <p><i class="icon solid fa-user"></i> Tommie Meyer</p>
+                                <p><i class="icon solid fa-envelope"></i> tmeyer@cair.org.za</p>
+                            </div>
+                        </div>
+                        <div class="students">
+                            <h3>Students</h3>
+                            <div class="user">
+                                <p><i class="icon solid fa-user"></i> Alec Lang</p>
+                                <p><i class="icon solid fa-envelope"></i> chocon(deez)@gmail.com</p>
+                            </div>
+                            <div class="user">
+                                <p><i class="icon solid fa-user"></i> David Pullinger</p>
+                                <p><i class="icon solid fa-envelope"></i> PLLDAV013@myuct.ac.za</p>
+                            </div>
+                            <div class="user">
+                                <p><i class="icon solid fa-user"></i> Luke Slater</p>
+                                <p><i class="icon solid fa-envelope"></i> sloberon(deez)@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <div class="images">
+                            <img src="images/uct.svg"/>
+                            <img src="images/sit.svg"/>
+                        </div>
+                        <div class="contact-details">
+                            <p><i class="icon solid fa-graduation-cap"></i> University of Cape Town</p>
+                            <p><i class="icon solid fa-school"></i> School of Information Technology</p>
+                            <p><i class="icon solid fa-envelope"></i> dept@cs.uct.ac.za</p>
+                            <p><i class="icon solid fa-globe"></i> sit.uct.ac.za</p>
+                            <p><i class="icon solid fa-phone"></i> (+27) 21 650 2663</p>
+                        </div>
+                    </div>
+                </div>
+                <ul class="menu">
+                    <li>&copy; University of Cape Town. All rights reserved.</li><li>Design adapted from: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
 </html>
