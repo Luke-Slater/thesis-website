@@ -258,7 +258,37 @@
             <section id="bayes" class="wrapper style2-alt">
                 <div class="inner">
                     <h2>Naïve Bayes Entailment</h2>
-                    <p>lorem ipsum</p>
+                    <h3>Introduction</h3>
+                    <p>Rational closure is a qualitative form of defeasible reasoning, and does not consider the ratio of worlds that satisfy a given property compared to those that do not. The idea behind naïve bayes entailment is to develop a probabilistic refinement of rational closure by performing bayesian calculations using the data within each world, simplified by assuming conditional independence. </p>
+                    <h3>Aims</h3>
+                    <ul>
+                        <li>Develop algorithms for probabilistically ranking worlds, and computing entailment, for a bayesian refinement of rational closure.</li>
+                        <li>Investigate the reasoning capabilities of the probabilistic refinement compared to that of tradtional rational closure.</li>
+                        <li>Investigate the rationality properties of the probabilistic refinement of rational closure.</li>
+                    </ul>
+                    <h3>Algorithms</h3>
+                    <p>This part of the project resulted in a number of unexpected algorithms. The first two being optimisations of existing algorithms, and the last being the probabilistic refinement of rational closure. </p>
+                    <h4>Reduced Minimal Ranked Entailment</h4>
+                    <p>A major problem with computing rational closure based on worlds is that the number of potential worlds increases exponentially with the number of variables. This often results in infeasible storage requirements, as well as increased computational demands when verifying entailment. Reduced minimal ranked entailment was developed to deal with these problems by reducing the amount of information required to compute entailment. This is achieved by using Reduced Ordered Binary Decision Diagrams to remove redundant information:</p>
+                    <div style="text-align: center;">
+                        <img src="images/ROBDD.png" alt="Example of a ROBDD" width="500">
+                    </div>
+                    <h4>Irredundant Base Rank</h4>
+                    <p>It was discovered that the formula based approach for computing rational closure performed redundant computation by including the defeasible consequences of atypical information in every rank prior to its base rank. To fix this, an algorithm called IrredundantBaseRank was developed as an optimisation of the tradtional base rank approach.</p>
+                    <h4>Naïve Bayes Entailment</h4>
+                    <p>The naïve bayes entailment algorthm was developed for computing the probabilistic refinement of rational closure. It works by treating the antecedent of the query as evidence, and the remaining atoms in each minimal world as the potential hypothesises. The probabilistic calculations are then performed using count based estimates from each minimal world satisfying the antecedent.</p>
+                    <h3>Results</h3>
+                    <ul>
+                        <li>Reduced minimal ranked entailment introduced additional complexity into the ranking process, but decreases the complexity of answering entailment queries, and can thus be considered as a compilation step.</li>
+                        <li>Irredundant base rank is an obvious optimisation of the base rank approach, and is guaranteed to improve computational efficiency when answering entailment queries.</li>
+                        <li>Naïve bayes entailment was shown to have some useful properties, but was also shown not to be rational.</li>
+                    </ul>
+                    <h3>Future Work</h3>
+                    <ul>
+                        <li>Empirically assess the computational benefits provided by the optimised algorithms in comparison to their regular counterparts.</li>
+                        <li>Develop a reduced version of lexicographic closure.</li>
+                        <li>Investigate more sophisticated probabilistic refinements of rational closure using real probabilistic data.</li>
+                    </ul>
                 </div>
             </section>
             <!-- Resources -->
@@ -293,8 +323,8 @@
                         <div class="resource-wrapper">
                             <h3>Luke Slater</h3>
                             <div>
-                                <a target="_blank" href="resources/.pdf">Literature Review</a>
-                                <a target="_blank" href="resources/.pdf">Paper</a>
+                                <a target="_blank" href="resources/LiteratureReview_SLTLUK001.pdf">Literature Review</a>
+                                <a target="_blank" href="resources/FinalPaper_SLTLUK001.pdf">Paper</a>
                             </div>
                         </div>
                     </div>
@@ -326,7 +356,7 @@
                             </div>
                             <div class="user">
                                 <p><i class="icon solid fa-user"></i> Luke Slater</p>
-                                <p><i class="icon solid fa-envelope"></i> sloberon(deez)@gmail.com</p>
+                                <p><i class="icon solid fa-envelope"></i> SLTLUK001@myuct.ac.za.com</p>
                             </div>
                         </div>
                     </div>
